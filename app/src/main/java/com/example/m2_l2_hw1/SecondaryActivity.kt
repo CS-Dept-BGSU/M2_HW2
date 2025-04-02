@@ -1,4 +1,4 @@
-package com.example.m2_hw2
+package com.example.m2_l2_hw1
 
 import android.os.Bundle
 import android.widget.TextView

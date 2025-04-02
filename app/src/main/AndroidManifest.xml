@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.m2_hw2">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -16,7 +15,7 @@
 
         <!-- Main Activity - Entry point of the application -->
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.m2_l2_hw1.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +25,7 @@
 
         <!-- Secondary Activity - Receives data from MainActivity -->
         <activity
-            android:name=".SecondaryActivity"
+            android:name="com.example.m2_l2_hw1.SecondaryActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <intent-filter>
@@ -37,7 +36,7 @@
 
         <!-- Background Service - Performs operations in the background -->
         <service
-            android:name=".BackgroundService"
+            android:name="com.example.m2_l2_hw1.BackgroundService"
             android:exported="false" />
 
     </application>

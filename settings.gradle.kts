@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "M2_HW2"
+rootProject.name = "M2_L2_HW1"
 include(":app")

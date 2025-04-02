@@ -1,10 +1,9 @@
-package com.example.m2_hw2
+package com.example.m2_l2_hw1
 
 import android.app.Service
 import android.content.Intent
 import android.os.IBinder
 import android.util.Log
-import android.widget.Toast
 
 class BackgroundService : Service() {
 
