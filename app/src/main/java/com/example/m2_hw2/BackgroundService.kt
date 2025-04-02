@@ -20,8 +20,9 @@ class BackgroundService : Service() {
     /**
      * TODO: Implement this method to handle the intent received from MainActivity
      * Extract the message from the intent extras with key "message"
+     * val message = intent.getStringExtra("message")
      * Display a Toast notification with the received message
-     * Return the appropriate start command result
+     * Return the appropriate start command result using Toast (If statement similar to SecondaryActivity.kt)
      *
      * Toast example:
      * // Toast.makeText(applicationContext, "Your message here", Toast.LENGTH_SHORT).show()
@@ -29,8 +30,8 @@ class BackgroundService : Service() {
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         // Your code here
 
-        // Default return, should be replaced with appropriate value based on implementation
-        return START_NOT_STICKY
+        // Return START_REDELIVER_INTENT to have the intent redelivered if the service restarts
+        return START_REDELIVER_INTENT
     }
 
     override fun onBind(intent: Intent?): IBinder? {

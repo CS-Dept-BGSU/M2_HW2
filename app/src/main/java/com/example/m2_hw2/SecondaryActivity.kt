@@ -22,8 +22,17 @@ class SecondaryActivity : AppCompatActivity() {
     /**
      * TODO: Implement this method to handle the intent received from MainActivity
      * Get the intent that started this activity
-     * Extract the message extra with key "message"
+     * val intent = intent
+     *
+     * Extract the message from the intent extras
+     * val message = intent.getStringExtra("message")
+     *
      * Display the message in the receivedMessageTextView
+     * if (!message.isNullOrEmpty()) {
+     *             receivedMessageTextView.text = message
+     *         } else {
+     *             receivedMessageTextView.text = "No message received"
+     *         }
      */
     private fun handleIncomingIntent() {
         // Your code here
